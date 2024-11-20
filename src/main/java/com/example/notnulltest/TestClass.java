@@ -8,6 +8,7 @@ public class TestClass {
         final @NotNull String bar = "bar";
         var baz = new Baz(bar);
 
+
         /* Alt-Enter on Baz and then selecting "Create Class 'Baz'" generates the following code:
 
         package com.example.notnulltest;
@@ -22,6 +23,12 @@ public class TestClass {
         Which cannot compile, because you cannot stack @NotNull.
 
          */
+
+        // I'm getting the same issue with: Baz baz = new Baz(bar);
+
+        // creating methods works fine / as expected
+
     }
+
 
 }
